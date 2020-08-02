@@ -1,0 +1,13 @@
+C:\Users\youss\Documents\Visual Studio 2019\Projects\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\bin\Debug\netcoreapp3.1\DataStructuresAndAlgorithms.exe
+C:\Users\youss\Documents\Visual Studio 2019\Projects\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\bin\Debug\netcoreapp3.1\DataStructuresAndAlgorithms.deps.json
+C:\Users\youss\Documents\Visual Studio 2019\Projects\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\bin\Debug\netcoreapp3.1\DataStructuresAndAlgorithms.runtimeconfig.json
+C:\Users\youss\Documents\Visual Studio 2019\Projects\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\bin\Debug\netcoreapp3.1\DataStructuresAndAlgorithms.runtimeconfig.dev.json
+C:\Users\youss\Documents\Visual Studio 2019\Projects\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\bin\Debug\netcoreapp3.1\DataStructuresAndAlgorithms.dll
+C:\Users\youss\Documents\Visual Studio 2019\Projects\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\bin\Debug\netcoreapp3.1\DataStructuresAndAlgorithms.pdb
+C:\Users\youss\Documents\Visual Studio 2019\Projects\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\obj\Debug\netcoreapp3.1\DataStructuresAndAlgorithms.csprojAssemblyReference.cache
+C:\Users\youss\Documents\Visual Studio 2019\Projects\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\obj\Debug\netcoreapp3.1\DataStructuresAndAlgorithms.csproj.CoreCompileInputs.cache
+C:\Users\youss\Documents\Visual Studio 2019\Projects\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\obj\Debug\netcoreapp3.1\DataStructuresAndAlgorithms.AssemblyInfoInputs.cache
+C:\Users\youss\Documents\Visual Studio 2019\Projects\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\obj\Debug\netcoreapp3.1\DataStructuresAndAlgorithms.AssemblyInfo.cs
+C:\Users\youss\Documents\Visual Studio 2019\Projects\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\obj\Debug\netcoreapp3.1\DataStructuresAndAlgorithms.dll
+C:\Users\youss\Documents\Visual Studio 2019\Projects\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\obj\Debug\netcoreapp3.1\DataStructuresAndAlgorithms.pdb
+C:\Users\youss\Documents\Visual Studio 2019\Projects\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\obj\Debug\netcoreapp3.1\DataStructuresAndAlgorithms.genruntimeconfig.cache
