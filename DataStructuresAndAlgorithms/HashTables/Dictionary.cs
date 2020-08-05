@@ -1,4 +1,4 @@
-﻿namespace DataStructuresAndAlgorithms
+﻿namespace DataStructuresAndAlgorithms.HashTables
 {
     public class Dictionary<T>
     {

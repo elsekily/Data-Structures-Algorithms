@@ -1,4 +1,4 @@
-﻿namespace DataStructuresAndAlgorithms
+﻿namespace DataStructuresAndAlgorithms.LinkedLists
 {
     public class LinkedList<T>
     {

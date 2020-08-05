@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DataStructuresAndAlgorithms
+namespace DataStructuresAndAlgorithms.HashTables
 {
     public class HashTable<T, Y>
     {/*

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 
-namespace DataStructuresAndAlgorithms
+namespace DataStructuresAndAlgorithms.Graphs
 {
     public class DirectedGraph
     {/*

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DataStructuresAndAlgorithms
+namespace DataStructuresAndAlgorithms.Stacks
 {
     public class Stack
     {

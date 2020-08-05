@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DataStructuresAndAlgorithms
+namespace DataStructuresAndAlgorithms.ProblemSolving
 {
     public class KQueens
     {

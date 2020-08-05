@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DataStructuresAndAlgorithms
+namespace DataStructuresAndAlgorithms.LinkedLists
 {
     public class CircularLinkedList
     {

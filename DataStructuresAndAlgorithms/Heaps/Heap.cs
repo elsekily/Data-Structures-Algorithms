@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DataStructuresAndAlgorithms
+namespace DataStructuresAndAlgorithms.Heaps
 {
     public class Heap
     {

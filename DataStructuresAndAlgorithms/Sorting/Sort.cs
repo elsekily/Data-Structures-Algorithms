@@ -1,4 +1,4 @@
-﻿namespace DataStructuresAndAlgorithms
+﻿namespace DataStructuresAndAlgorithms.Sorting
 {
     public class Sort
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DataStructuresAndAlgorithms
+namespace DataStructuresAndAlgorithms.Tries
 {
     public class Trie
     {

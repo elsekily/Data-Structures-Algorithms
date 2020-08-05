@@ -1,4 +1,4 @@
-﻿namespace DataStructuresAndAlgorithms
+﻿namespace DataStructuresAndAlgorithms.Queues
 {
     public class PriorityQueue
     {

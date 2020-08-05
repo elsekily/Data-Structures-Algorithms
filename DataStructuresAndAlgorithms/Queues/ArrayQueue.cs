@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace DataStructuresAndAlgorithms
+namespace DataStructuresAndAlgorithms.Queues
 {
     public class ArrayQueue
     {

@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace DataStructuresAndAlgorithms
+namespace DataStructuresAndAlgorithms.Trees
 {
-    public class BinarySearchTree
+    public class BinaryTree
     {
         private Node root;
-        internal class Node
+        public partial class Node
         {
             public int Value { get; set; }
             public Node LeftChild { get; set; }
@@ -103,94 +103,29 @@ namespace DataStructuresAndAlgorithms
             PostOrderTraversal(node.RightChild);
             Console.WriteLine(node.Value);
         }
-        public int Height()
-        {
-            return Height(root);
-        }
-        private int Height(Node node)
-        {
-            if (node.LeftChild == null && node.RightChild == null)
-            {
-                return 0;
-            }
 
-            if (node.LeftChild == null)
-                return 1 + Height(node.RightChild);
-            if (node.RightChild == null)
-                return 1 + Height(node.LeftChild);
-
-            return 1 + Math.Max(Height(node.LeftChild), Height(node.RightChild));
-        }
-        public int Minmum()
+        public bool Validate()
         {
-            return Minmum(root);
+            return Validate(root);
         }
-        private int Minmum(Node node)
+        private bool Validate(Node node)
         {
-            if (node.LeftChild == null && node.RightChild == null)
-                return node.Value;
-            if (node.LeftChild == null)
-                return Math.Min(node.Value, Minmum(node.RightChild));
-            if (node.RightChild == null)
-                return Math.Min(node.Value, Minmum(node.LeftChild));
-
-            return Math.Min(node.Value, Math.Min(Minmum(node.LeftChild), Minmum(node.RightChild)));
-        }
-        public int MinmumBinarySearchTree()
-        {
-            var current = root;
-            while (current.LeftChild != null)
-                current = current.LeftChild;
-
-            return current.Value;
-        }
-        public bool CheckEquilty(BinarySearchTree binaryTree)
-        {
-            return CheckbyNode(this.root, binaryTree.root);
-        }
-        private bool CheckbyNode(Node thisNode, Node thatNode)
-        {
-            if (thisNode == null && thatNode == null)
-                return true;
-            if (thisNode == null || thatNode == null)
-                return false;
-
-            if (thisNode.Value != thatNode.Value)
-                return false;
-
-            return true && CheckbyNode(thisNode.LeftChild, thatNode.LeftChild)
-                && CheckbyNode(thisNode.RightChild, thatNode.RightChild);
-        }
-        public bool IsBinarySearchTree()
-        {
-            return IsBinarySearchTree(root, Int32.MinValue, Int32.MaxValue);
-        }
-        private bool IsBinarySearchTree(Node node, int min, int max)
-        {
-            if (node == null)
+            if (node.RightChild == null && node.LeftChild == null)
                 return true;
 
-            if (!(node.Value > min && node.Value < max))
-                return false;
+            bool x = false;
+            if (node.Value > node.LeftChild.Value && node.Value < node.RightChild.Value)
+                x = true;
 
-            return true && IsBinarySearchTree(node.LeftChild, min, node.Value)
-                && IsBinarySearchTree(node.RightChild, node.Value, max);
+            return x && Validate(node.RightChild) && Validate(node.RightChild);
         }
-        public void NodesAtK(int k)
+
+        public void Swap()
         {
-            NodesAtK(root, k);
+            var temp = root.LeftChild;
+            root.LeftChild = root.RightChild;
+            root.RightChild = temp;
         }
-        private void NodesAtK(Node node, int k)
-        {
-            if (node == null)
-                return;
-            if (k == 0)
-            {
-                Console.WriteLine(node.Value);
-                return;
-            }
-            NodesAtK(node.LeftChild, k - 1);
-            NodesAtK(node.RightChild, k - 1);
-        }
+
     }
 }
