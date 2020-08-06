@@ -44,10 +44,8 @@ namespace DataStructuresAndAlgorithms.HashTables
         {
             var entry = GetEntry(key);
             if (entry != null)
-            {
-                entry.Value = value;
-                return;
-            }
+                throw new InvalidProgramException();
+
             GetOrCreateBucket(key).AddLast(new Entry<T, Y>(key, value));
         }
         public void Remove(T key)
