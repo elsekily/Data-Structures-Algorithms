@@ -1,5 +1,4 @@
-﻿using DataStructuresAndAlgorithms.ProblemSolving;
-using DataStructuresAndAlgorithms.Queues;
+﻿using DataStructuresAndAlgorithms.HashTables;
 using System.Collections.Generic;
 
 namespace DataStructuresAndAlgorithms
@@ -8,7 +7,7 @@ namespace DataStructuresAndAlgorithms
     {
         static void Main(string[] args)
         {
-
+            
         }
         static void PrintQueue(Queue<int> queue)
         {

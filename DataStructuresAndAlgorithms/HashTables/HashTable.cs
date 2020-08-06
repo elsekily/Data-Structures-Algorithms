@@ -1,9 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace DataStructuresAndAlgorithms.HashTables
 {
     public class HashTable<T, Y>
-    {/*
+    {
         private LinkedList<Entry<T, Y>>[] entries;
         class Entry<T, Y>
         {
@@ -19,37 +20,42 @@ namespace DataStructuresAndAlgorithms.HashTables
         {
             entries = new LinkedList<Entry<T, Y>>[size];
         }
-
-        public void Put(T key, Y value)
+        public Y this[T key]
+        {
+            get 
+            {
+                var entry = GetEntry(key);
+                if (entry != null)
+                    return entry.Value;
+                throw new ArgumentNullException();
+            }
+            set 
+            {
+                var entry = GetEntry(key);
+                if (entry != null)
+                {
+                    entry.Value = value;
+                    return;
+                }  
+                throw new ArgumentNullException();
+            }
+        }
+        public void Add(T key, Y value)
         {
             var entry = GetEntry(key);
             if (entry != null)
             {
                 entry.Value = value;
+                return;
             }
             GetOrCreateBucket(key).AddLast(new Entry<T, Y>(key, value));
         }
-
-        public Y Get(T key)
-        {
-            var entry = GetEntry(key);
-            if (entry != null)
-                return entry.Value;
-            throw new ArgumentNullException();
-        }
-
         public void Remove(T key)
         {
             var entry = GetEntry(key);
             if (entry == null)
                 throw new ArgumentNullException();
             GetBucket(key).Remove(entry);
-        }
-
-
-        private int Hashing(T key)
-        {
-            return Convert.ToInt32(key) % entries.Length;
         }
         private LinkedList<Entry<T, Y>> GetBucket(T key)
         {
@@ -62,12 +68,16 @@ namespace DataStructuresAndAlgorithms.HashTables
                 entries[hashedKey] = new LinkedList<Entry<T, Y>>();
             return entries[hashedKey];
         }
+        private int Hashing(T key)
+        {
+            return Convert.ToInt32(key) % entries.Length;
+        } 
         private Entry<T, Y> GetEntry(T key)
         {
-            var hashedKey = Hashing(key);
-            if (entries[hashedKey] != null)
+            var bucket = GetBucket(key);
+            if (bucket != null)
             {
-                foreach (var item in entries[hashedKey])
+                foreach (var item in bucket)
                 {
                     if (item.Key.Equals(key))
                     {
@@ -76,6 +86,6 @@ namespace DataStructuresAndAlgorithms.HashTables
                 }
             }
             return null;
-        }*/
+        }
     }
 }

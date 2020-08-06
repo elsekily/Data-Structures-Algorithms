@@ -4,7 +4,6 @@
     {
         private Node<T> first;
         private Node<T> last;
-
         class Node<T>
         {
             public T value;
@@ -14,7 +13,6 @@
                 this.value = value;
             }
         }
-
         public void AddFirst(T value)
         {
             if(first==null)
@@ -73,8 +71,5 @@
             }
             return false;
         }
-        
-       
-
     }
 }
