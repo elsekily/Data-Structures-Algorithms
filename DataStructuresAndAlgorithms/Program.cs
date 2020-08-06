@@ -1,4 +1,5 @@
-﻿using DataStructuresAndAlgorithms.Queues;
+﻿using DataStructuresAndAlgorithms.ProblemSolving;
+using DataStructuresAndAlgorithms.Queues;
 using System.Collections.Generic;
 
 namespace DataStructuresAndAlgorithms
@@ -7,23 +8,6 @@ namespace DataStructuresAndAlgorithms
     {
         static void Main(string[] args)
         {
-            var z = new PriorityQueue();
-            
-            
-            z.Enqueue(3);
-            z.Enqueue(5);
-            z.Enqueue(4);
-            //z.Enqueue(1);
-            //z.Enqueue(2);
-            System.Console.WriteLine(z.Dequeue());
-            System.Console.WriteLine(z.Dequeue());
-            System.Console.WriteLine(z.Dequeue());
-            //System.Console.WriteLine(z.Dequeue());
-            z.Enqueue(13);
-            z.Enqueue(25);
-            z.Enqueue(04);
-            z.Enqueue(10);
-
 
         }
         static void PrintQueue(Queue<int> queue)
