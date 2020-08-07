@@ -16,7 +16,7 @@ namespace DataStructuresAndAlgorithms.HashTables
                 Value = value;
             }
         }
-        public HashTable(int size)
+        public HashTable(int size = 10)
         {
             entries = new LinkedList<Entry<T, Y>>[size];
         }
