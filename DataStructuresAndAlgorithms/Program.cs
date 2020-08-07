@@ -1,12 +1,10 @@
-﻿using System.Collections.Generic;
-
-namespace DataStructuresAndAlgorithms
+﻿namespace DataStructuresAndAlgorithms
 {
     class Program
     {
         static void Main(string[] args)
         {
-                
+            
         }
     }
 }
