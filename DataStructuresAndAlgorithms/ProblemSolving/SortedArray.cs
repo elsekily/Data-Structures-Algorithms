@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DataStructuresAndAlgorithms.Sorting
+namespace DataStructuresAndAlgorithms.ProblemSolving
 {
     public class SortedArray
     {
