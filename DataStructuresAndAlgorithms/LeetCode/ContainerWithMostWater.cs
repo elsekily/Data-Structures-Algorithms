@@ -9,11 +9,23 @@ namespace DataStructuresAndAlgorithms.LeetCode
             int maxArea = 0;
             for (int i = 0; i < height.Length - 1; i++)
             {
-                for (int j = i + 1; j < height.Length; j++) 
+                for (int j = i + 1; j < height.Length; j++)
                 {
-                    var area = Math.Min(height[i], height[j]) * (j - i);
-                    maxArea = area > maxArea ? area : maxArea;
+                    maxArea = Math.Max(Math.Min(height[i], height[j]) * (j - i), maxArea);
                 }
+            }
+            return maxArea;
+        }
+        public int MaxAreaTwoPointers(int[] height)
+        {
+            int maxArea = 0, left = 0, right = height.Length - 1;
+            while (left < right)
+            {
+                maxArea = Math.Max(maxArea, Math.Min(height[left], height[right]) * (right - left));
+                if (height[left] < height[right])
+                    left++;
+                else
+                    right--;
             }
             return maxArea;
         }
