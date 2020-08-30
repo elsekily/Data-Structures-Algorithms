@@ -14,16 +14,16 @@ namespace DataStructuresAndAlgorithms.LeetCode
     Output: 7 -> 0 -> 8
     Explanation: 342 + 465 = 807.
      */
-    public class ListNode // inputs type
-    {
-        public int val;
-        public ListNode next;
-        public ListNode(int val = 0, ListNode next = null)
-        {
-            this.val = val;
-            this.next = next;
-        }
-    }
+    //public class ListNode // inputs type
+    //{
+    //    public int val;
+    //    public ListNode next;
+    //    public ListNode(int val = 0, ListNode next = null)
+    //    {
+    //        this.val = val;
+    //        this.next = next;
+    //    }
+    //}
     class AddTwoNumbers
     {
         public ListNode Solution(ListNode l1, ListNode l2)
