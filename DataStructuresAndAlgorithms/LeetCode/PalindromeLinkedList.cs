@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using DataStructuresAndAlgorithms.LeetCode.InputTypes;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace DataStructuresAndAlgorithms.LeetCode

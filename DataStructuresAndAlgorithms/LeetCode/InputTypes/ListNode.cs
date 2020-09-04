@@ -1,4 +1,4 @@
-﻿namespace DataStructuresAndAlgorithms.LeetCode
+﻿namespace DataStructuresAndAlgorithms.LeetCode.InputTypes
 {
     public class ListNode
     {

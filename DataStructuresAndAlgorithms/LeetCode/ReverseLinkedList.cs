@@ -1,4 +1,6 @@
-﻿namespace DataStructuresAndAlgorithms.LeetCode
+﻿using DataStructuresAndAlgorithms.LeetCode.InputTypes;
+
+namespace DataStructuresAndAlgorithms.LeetCode
 {
     public class ReverseLinkedList
     {
