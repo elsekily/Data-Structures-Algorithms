@@ -1,12 +1,14 @@
 ﻿using System;
+using System.Globalization;
 
-namespace DataStructuresAndAlgorithms.ProblemSolving
+namespace DataStructuresAndAlgorithms.LeetCode
 {
-    public class SortedArray
+    public class SquaresofaSortedArray
     {
+        //O(N)
+        //O(N) Space
         public int[] SquaringSortedArray(int[] InputArray)
         {
-            //O(N)
             int[] outputArray = new int[InputArray.Length];
 
             int headPointer = 0;
