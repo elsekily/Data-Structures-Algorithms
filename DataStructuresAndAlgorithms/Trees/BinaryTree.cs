@@ -5,7 +5,7 @@ namespace DataStructuresAndAlgorithms.Trees
     public class BinaryTree
     {
         private Node root;
-        public partial class Node
+        private class Node
         {
             public int Value { get; set; }
             public Node LeftChild { get; set; }
@@ -103,7 +103,6 @@ namespace DataStructuresAndAlgorithms.Trees
             PostOrderTraversal(node.RightChild);
             Console.WriteLine(node.Value);
         }
-
         public bool Validate()
         {
             return Validate(root);
@@ -119,13 +118,11 @@ namespace DataStructuresAndAlgorithms.Trees
 
             return x && Validate(node.RightChild) && Validate(node.RightChild);
         }
-
         public void Swap()
         {
             var temp = root.LeftChild;
             root.LeftChild = root.RightChild;
             root.RightChild = temp;
         }
-
     }
 }

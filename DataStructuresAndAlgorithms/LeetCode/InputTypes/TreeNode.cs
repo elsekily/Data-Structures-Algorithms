@@ -11,5 +11,9 @@
             this.left = left;
             this.right = right;
         }
+        public override string ToString()
+        {
+            return "Value = " + val;
+        }
     }
 }

@@ -12,17 +12,19 @@ namespace DataStructuresAndAlgorithms.LeetCode
             list = new List<int>();
             var stack = new Stack<TreeNode>();
             var current = root;
-            while (current != null || stack.Count != 0) 
+            while (current != null || stack.Count != 0)
             {
                 if (current != null)
                 {
                     stack.Push(current);
                     current = current.left;
-                    continue;
                 }
-                current = stack.Pop();
-                list.Add(current.val);
-                current = current.right;
+                else
+                {
+                    current = stack.Pop();
+                    list.Add(current.val);
+                    current = current.right;
+                }
             }
             return list;
         }
