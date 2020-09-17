@@ -1,4 +1,5 @@
 ﻿using DataStructuresAndAlgorithms.LeetCode.InputTypes;
+using System.Data;
 
 namespace DataStructuresAndAlgorithms.LeetCode
 {
@@ -40,6 +41,36 @@ namespace DataStructuresAndAlgorithms.LeetCode
                 head = next;
             }
             return prev;
+        }
+        public ListNode ReverseBetween(ListNode head, int m, int n)
+        {
+            var start = head;
+            var end = head;
+            while (m > 2)
+            {
+                start = start.next;
+                m--;
+            }
+            while (n > 1)
+            {
+                end = end.next;
+                n--;
+            }
+            var tempEnd = end.next;
+            end.next = null;
+            
+            if(m==1)
+                head = AnotherSolution(start);
+            
+            else
+                start.next = AnotherSolution(start.next);
+
+            while (start.next != null)
+            {
+                start = start.next;
+            }
+            start.next = tempEnd;
+            return head;
         }
     }
  }
