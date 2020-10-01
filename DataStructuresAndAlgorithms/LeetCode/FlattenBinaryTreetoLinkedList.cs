@@ -1,4 +1,5 @@
 ﻿using DataStructuresAndAlgorithms.LeetCode.InputTypes;
+using System.Collections.Generic;
 
 namespace DataStructuresAndAlgorithms.LeetCode
 {
@@ -21,6 +22,30 @@ namespace DataStructuresAndAlgorithms.LeetCode
                 while (current.right != null)
                     current = current.right;
                 current.right = temp;
+            }
+        }
+        public void FlattenWithStack(TreeNode root)
+        {
+            if (root == null)
+                return;
+
+            var stack = new Stack<TreeNode>();
+            stack.Push(root);
+
+            while (stack.Count != 0)
+            {
+                var current = stack.Pop();
+
+                if (current.right != null)
+                    stack.Push(current.right);
+
+                if (current.left != null)
+                    stack.Push(current.left);
+
+                if (stack.Count != 0)
+                    current.right = stack.Peek();
+
+                current.left = null;
             }
         }
     }
